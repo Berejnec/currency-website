@@ -8,6 +8,7 @@ import { ConverterComponent } from './converter/converter.component';
 import { FooterComponent } from './footer/footer.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import {MatToolbarModule} from "@angular/material/toolbar";
         BrowserModule,
         AppRoutingModule,
         NoopAnimationsModule,
-        MatToolbarModule
+        MatToolbarModule,
+        FontAwesomeModule
     ],
   providers: [],
   bootstrap: [AppComponent]

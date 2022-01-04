@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-toolbar',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
+
+  faDollarSign = faDollarSign;
 
   constructor() { }
 
