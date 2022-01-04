@@ -5,3 +5,8 @@ app-footer {
   vertical-align: middle;
   width: 100%;
 }
+
+app-converter {
+  display: flex;
+  justify-content: center;
+}
