@@ -1,0 +1,8 @@
+h3 {
+  font: 400 19px/32px Roboto, "Helvetica Neue", sans-serif;
+}
+
+.footer {
+  color: rgba(235,235,235,.6);
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+}
