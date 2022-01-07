@@ -10,11 +10,11 @@
     </div>
 
     <div class="container-currencies">
-      <mat-card>USD VALUE</mat-card>
+      <mat-card>{{ usdValue | currency:'USD' }}</mat-card>
       <hr>
-      <mat-card>EURO VALUE</mat-card>
+      <mat-card>{{ eurValue  | currency:'EUR' }}</mat-card>
       <hr>
-      <mat-card>GBP VALUE</mat-card>
+      <mat-card>{{ gbpValue | currency:'GBP' }}</mat-card>
     </div>
 
   </div>

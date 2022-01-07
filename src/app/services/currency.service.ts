@@ -21,4 +21,16 @@ export class CurrencyService {
     );
   }
 
+  getEuroCurrency() {
+    return this.http.get<any>(`${this.firstBaseUrl}RON_EUR${this.secondBaseUrl}${this.apiKey}`).pipe(
+      map(value => value['RON_EUR'])
+    );
+  }
+
+  getGbpCurrency() {
+    return this.http.get<any>(`${this.firstBaseUrl}RON_GBP${this.secondBaseUrl}${this.apiKey}`).pipe(
+      map(value => value['RON_GBP'])
+    );
+  }
+
 }
