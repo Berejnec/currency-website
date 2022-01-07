@@ -6,7 +6,12 @@ app-footer {
   width: 100%;
 }
 
-app-converter {
-  display: flex;
-  justify-content: center;
-}
+/*app-converter {*/
+/*  position: absolute;*/
+/*  top: 50%;*/
+/*  left: 50%;*/
+/*  margin-top: -200px;*/
+/*  margin-left: -200px;*/
+/*  width: 400px;*/
+/*  height: auto;*/
+/*}*/

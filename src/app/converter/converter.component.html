@@ -1,13 +1,21 @@
 <form class="form">
   <div class="container">
-    <mat-form-field class="full-width" appearance="fill">
-      <mat-label>From:</mat-label>
-      <input matInput placeholder="Ex. RON">
-    </mat-form-field>
+    <div class="input-ron">
+      <label for="ronInput">Enter the amount of <strong>RON</strong> you want to convert to <strong>USD / EURO / GBP</strong></label>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>RON:</mat-label>
+        <input id="ronInput" matInput placeholder="Enter amount">
+      </mat-form-field>
+      <button mat-raised-button color="primary">Convert</button>
+    </div>
 
-    <mat-form-field class="full-width" appearance="fill">
-      <mat-label>To:</mat-label>
-      <input matInput placeholder="Ex. USD">
-    </mat-form-field>
+    <div class="container-currencies">
+      <mat-card>USD VALUE</mat-card>
+      <hr>
+      <mat-card>EURO VALUE</mat-card>
+      <hr>
+      <mat-card>GBP VALUE</mat-card>
+    </div>
+
   </div>
 </form>
