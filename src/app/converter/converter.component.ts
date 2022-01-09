@@ -11,13 +11,18 @@ export class ConverterComponent implements OnInit {
   usdValue!: number;
   eurValue!: number;
   gbpValue!: number;
+  inputValue: any;
 
   constructor(private currency: CurrencyService) { }
 
   ngOnInit(): void {
-    this.currency.getUsdCurrency().subscribe(data => this.usdValue = data);
-    this.currency.getEuroCurrency().subscribe(data => this.eurValue = data);
-    this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data);
+    this.currency.getUsdCurrency().subscribe(data => this.usdValue = data * this.inputValue);
+    this.currency.getEuroCurrency().subscribe(data => this.eurValue = data * this.inputValue);
+    this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data * this.inputValue);
+  }
+
+  onSubmit() {
+    console.log(this.inputValue);
   }
 
 }
