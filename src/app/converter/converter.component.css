@@ -18,6 +18,8 @@ label {
 mat-card {
   background-color: #a2a5c7;
   width: 250px;
+  font-size: 20px;
+  text-align: center;
 }
 
 .input-ron {
@@ -41,10 +43,13 @@ mat-card {
   height: auto;
   display: flex;
   flex-direction: row;
-  padding-top: 10px;
+  padding-top: 60px;
 }
 
 button {
   width: 180px;
 }
 
+#ronInput {
+  font-size: 25px;
+}

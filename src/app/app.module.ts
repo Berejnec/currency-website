@@ -14,7 +14,7 @@ import {MatInputModule} from "@angular/material/input";
 import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 import {HttpClientModule} from "@angular/common/http";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,19 +23,20 @@ import {FormsModule} from "@angular/forms";
     ConverterComponent,
     FooterComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NoopAnimationsModule,
-    MatToolbarModule,
-    FontAwesomeModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatCardModule,
-    MatButtonModule,
-    HttpClientModule,
-    FormsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NoopAnimationsModule,
+        MatToolbarModule,
+        FontAwesomeModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatCardModule,
+        MatButtonModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

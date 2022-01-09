@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {CurrencyService} from "../services/currency.service";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-converter',
@@ -21,10 +22,13 @@ export class ConverterComponent implements OnInit {
     this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data);
   }
 
-  onSubmit() {
-    this.currency.getUsdCurrency().subscribe(data => this.usdValue = data * this.inputValue);
-    this.currency.getEuroCurrency().subscribe(data => this.eurValue = data * this.inputValue);
-    this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data * this.inputValue);
+  onSubmit(form: NgForm) {
+    let auxInput = this.inputValue;
+    this.currency.getUsdCurrency().subscribe(data => this.usdValue = data * auxInput);
+    this.currency.getEuroCurrency().subscribe(data => this.eurValue = data * auxInput);
+    this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data * auxInput);
+    form.resetForm();
   }
+
 
 }
