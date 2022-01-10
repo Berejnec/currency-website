@@ -4,18 +4,16 @@
       <label for="ronInput">Enter the amount of <strong>RON</strong> you want to convert to <strong>USD / EURO / GBP</strong></label>
       <mat-form-field class="full-width" appearance="fill">
         <mat-label>RON:</mat-label>
-        <input id="ronInput" matInput placeholder="Enter amount" [(ngModel)]="inputValue" name="ronInput" required #name="ngModel">
+        <input id="ronInput" matInput placeholder="Enter amount" [(ngModel)]="inputValue" name="ronInput" required>
       </mat-form-field>
       <button mat-raised-button color="primary">Convert</button>
     </div>
 
-    <div class="container-currencies">
-      <mat-card>{{ usdValue | currency:'USD' }}</mat-card>
-      <hr>
-      <mat-card>{{ eurValue  | currency:'EUR' }}</mat-card>
-      <hr>
-      <mat-card>{{ gbpValue | currency:'GBP' }}</mat-card>
-    </div>
+      <div class="container-currencies">
+        <mat-card>{{ usdValue | currency:'USD' }}</mat-card>
+        <mat-card>{{ eurValue  | currency:'EUR' }}</mat-card>
+        <mat-card>{{ gbpValue | currency:'GBP' }}</mat-card>
+      </div>
 
-  </div>
+    </div>
 </form>

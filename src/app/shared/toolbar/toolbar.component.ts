@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
+import { faEuroSign } from "@fortawesome/free-solid-svg-icons";
+import { faPoundSign } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-toolbar',
@@ -9,6 +11,8 @@ import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 export class ToolbarComponent implements OnInit {
 
   faDollarSign = faDollarSign;
+  faEuroSign = faEuroSign;
+  faPoundSign = faPoundSign;
 
   constructor() { }
 
