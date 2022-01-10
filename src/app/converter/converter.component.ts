@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {CurrencyService} from "../services/currency.service";
 import {NgForm} from "@angular/forms";
 
@@ -8,7 +8,8 @@ import {NgForm} from "@angular/forms";
   styleUrls: ['./converter.component.css']
 })
 export class ConverterComponent implements OnInit {
-
+  @Input()
+  enteredValue!: number;
   usdValue!: number;
   eurValue!: number;
   gbpValue!: number;
@@ -17,16 +18,17 @@ export class ConverterComponent implements OnInit {
   constructor(private currency: CurrencyService) { }
 
   ngOnInit(): void {
-    // this.currency.getUsdCurrency().subscribe(data => this.usdValue = data);
-    // this.currency.getEuroCurrency().subscribe(data => this.eurValue = data);
-    // this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data);
+    this.currency.getUsdCurrency().subscribe(data => this.usdValue = data);
+    this.currency.getEuroCurrency().subscribe(data => this.eurValue = data);
+    this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data);
   }
 
   onSubmit(form: NgForm) {
-    // let auxInput = this.inputValue;
-    // this.currency.getUsdCurrency().subscribe(data => this.usdValue = data * auxInput);
-    // this.currency.getEuroCurrency().subscribe(data => this.eurValue = data * auxInput);
-    // this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data * auxInput);
+    let auxInput = this.inputValue;
+    this.enteredValue = this.inputValue;
+    this.currency.getUsdCurrency().subscribe(data => this.usdValue = data * auxInput);
+    this.currency.getEuroCurrency().subscribe(data => this.eurValue = data * auxInput);
+    this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data * auxInput);
     // form.resetForm();
   }
 }

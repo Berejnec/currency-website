@@ -8,12 +8,12 @@
       </mat-form-field>
       <button mat-raised-button color="primary">Convert</button>
     </div>
-
-      <div class="container-currencies">
-        <mat-card>{{ usdValue | currency:'USD' }}</mat-card>
-        <mat-card>{{ eurValue  | currency:'EUR' }}</mat-card>
-        <mat-card>{{ gbpValue | currency:'GBP' }}</mat-card>
-      </div>
+    <h2 *ngIf="myForm.submitted">The current equivalent currencies for {{ enteredValue }} RON are:</h2>
+    <div class="container-currencies">
+      <mat-card>{{ usdValue | currency:'USD' }}</mat-card>
+      <mat-card>{{ eurValue  | currency:'EUR' }}</mat-card>
+      <mat-card>{{ gbpValue | currency:'GBP' }}</mat-card>
+    </div>
 
     </div>
 </form>

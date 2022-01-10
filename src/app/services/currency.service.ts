@@ -15,21 +15,21 @@ export class CurrencyService {
   constructor(private http: HttpClient) {}
 
   getUsdCurrency() {
-    // return this.http.get<any>(this.baseUrl).pipe(
-    //   map(data => data["conversion_rates"]["USD"])
-    // );
+    return this.http.get<any>(this.baseUrl).pipe(
+      map(data => data["conversion_rates"]["USD"])
+    );
   }
 
   getEuroCurrency() {
-    // return this.http.get<any>(this.baseUrl).pipe(
-    //   map(data => data["conversion_rates"]["EUR"])
-    // );
+    return this.http.get<any>(this.baseUrl).pipe(
+      map(data => data["conversion_rates"]["EUR"])
+    );
   }
 
   getGbpCurrency() {
-    // return this.http.get<any>(this.baseUrl).pipe(
-    //   map(data => data["conversion_rates"]["GBP"])
-    // );
+    return this.http.get<any>(this.baseUrl).pipe(
+      map(data => data["conversion_rates"]["GBP"])
+    );
   }
 
 }
