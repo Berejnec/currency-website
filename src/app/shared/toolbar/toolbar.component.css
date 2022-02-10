@@ -1,5 +1,17 @@
-#title {
-  flex: 1 1 auto;
-  text-align: center;
+mat-toolbar-row {
+  min-height: 30px !important;
+  height: 40px !important;
 }
 
+.nav-button {
+  /*background-color: #6d7fe3;*/
+}
+#title {
+  font-size: xx-large;
+}
+
+.buttons {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+}
