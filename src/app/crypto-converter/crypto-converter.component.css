@@ -3,3 +3,47 @@
   margin-left: 5px;
   width: 180px;
 }
+
+.form {
+  width: 100%;
+}
+.full-width {
+  width: 100%;
+}
+.container {
+  max-width: 800px;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+label {
+  text-align: center;
+  font-size: 25px;
+}
+
+mat-card {
+  background-color: #a2a5c7;
+  width: 250px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.input-btc {
+  width: 500px;
+}
+
+mat-card {
+  margin-top: 50px;
+}
+
+button {
+  width: 180px;
+}
+
+#btcInput {
+  font-size: 25px;
+}
