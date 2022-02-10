@@ -12,7 +12,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  /*top: 350px;*/
+  /*left: 190px;*/
+  /*flex-basis: auto;*/
+  /*background-color: white;*/
 }
 label {
   text-align: center;
