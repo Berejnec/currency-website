@@ -11,25 +11,23 @@ export class CurrencyService {
   private baseUrl = `https://v6.exchangerate-api.com/v6/${this.apiKey}/latest/RON`;
   private secondBaseUrl = "?app_id=";
 
-
   constructor(private http: HttpClient) {}
 
   getUsdCurrency() {
-    return this.http.get<any>(this.baseUrl).pipe(
-      map(data => data["conversion_rates"]["USD"])
-    );
+    // return this.http.get<any>(this.baseUrl).pipe(
+    //   map(data => data["conversion_rates"]["USD"])
+    // );
   }
 
   getEuroCurrency() {
-    return this.http.get<any>(this.baseUrl).pipe(
-      map(data => data["conversion_rates"]["EUR"])
-    );
+    // return this.http.get<any>(this.baseUrl).pipe(
+    //   map(data => data["conversion_rates"]["EUR"])
+    // );
   }
 
   getGbpCurrency() {
-    return this.http.get<any>(this.baseUrl).pipe(
-      map(data => data["conversion_rates"]["GBP"])
-    );
+    // return this.http.get<any>(this.baseUrl).pipe(
+    //   map(data => data["conversion_rates"]["GBP"])
+    // );
   }
-
 }

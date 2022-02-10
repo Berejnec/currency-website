@@ -5,12 +5,6 @@
   width: 100%;
 }
 .container {
-  /*position: relative;*/
-  /*top: 50%;*/
-  /*left: 48%;*/
-  /*margin-top: -200px;*/
-  /*margin-left: -200px;*/
-  /*position: absolute;*/
   max-width: 800px;
   height: 100%;
   text-align: center;
@@ -18,10 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*top: 350px;*/
-  /*left: 190px;*/
-  /*flex-basis: auto;*/
-  /*background-color: white;*/
+  padding-top: 100px;
 }
 label {
   text-align: center;
@@ -36,32 +27,17 @@ mat-card {
 }
 
 .input-ron {
-  /*position: absolute;*/
-  /*top: 50%;*/
-  /*left: 50%;*/
-  /*margin-top: -200px;*/
-  /*margin-left: -200px;*/
   width: 500px;
-  /*height: auto;*/
-  /*text-align: center;*/
 }
 
 .container-currencies {
-  /*position: relative;*/
-  /*top: 70%;*/
-  /*left: 40%;*/
-  /*margin-top: -200px;*/
-  /*margin-left: -200px;*/
-  /*width: auto;*/
   width: 800px;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
-  /*flex-basis: 25px;*/
   padding-top: 50px;
-  /*background-color: black;*/
 }
 
 button {
@@ -72,3 +48,7 @@ button {
   font-size: 25px;
 }
 
+.button-navigate {
+  margin-top: 5px;
+  margin-left: 5px;
+}

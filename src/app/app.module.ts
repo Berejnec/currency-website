@@ -15,13 +15,17 @@ import {MatCardModule} from "@angular/material/card";
 import {MatButtonModule} from "@angular/material/button";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { ImagesComponent } from './images/images.component';
+import { CryptoConverterComponent } from './crypto-converter/crypto-converter.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     ConverterComponent,
-    FooterComponent
+    FooterComponent,
+    ImagesComponent,
+    CryptoConverterComponent
   ],
     imports: [
         BrowserModule,

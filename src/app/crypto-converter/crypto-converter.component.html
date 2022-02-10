@@ -1,0 +1,16 @@
+<button mat-flat-button color="primary" class="button-navigate" [routerLink]="['/converter']">Converter Page</button>
+<form class="form" #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+  <div class="container">
+    <div class="input-ron">
+      <label for="btcInput">Enter the amount of <strong>BTC</strong> you want to convert to USD</label>
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Bitcoin (BTC) :</mat-label>
+        <input id="btcInput" matInput placeholder="Enter amount" [(ngModel)]="inputValue" name="btcInput" required>
+      </mat-form-field>
+      <button mat-raised-button color="primary" type="submit">Convert</button>
+    </div>
+    <div class="container-currencies">
+        <mat-card> {{ btcUsdValue | currency: 'USD'}}</mat-card>
+    </div>
+  </div>
+</form>

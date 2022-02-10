@@ -1,3 +1,4 @@
+<button class="button-navigate" mat-flat-button color="primary" [routerLink]="['/crypto-images']">Cryptocurrency Page</button>
 <form class="form" #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
   <div class="container">
     <div class="input-ron">
@@ -14,6 +15,5 @@
       <mat-card>{{ eurValue  | currency:'EUR' }}</mat-card>
       <mat-card>{{ gbpValue | currency:'GBP' }}</mat-card>
     </div>
-
-    </div>
+  </div>
 </form>
