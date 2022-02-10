@@ -2,31 +2,7 @@ app-footer {
   position: fixed;
   bottom: 0;
   right: 10px;
-  /*min-height: 50px;*/
-  /*margin-top: auto;*/
-  /*text-align: center;*/
-  /*vertical-align: middle;*/
-  /*width: 100%;*/
 }
-
-/*app-converter {*/
-/*  !*position: absolute;*!*/
-/*  !*top: 50%;*!*/
-/*  !*left: 50%;*!*/
-/*  !*margin-top: -200px;*!*/
-/*  !*margin-left: -200px;*!*/
-/*  !*width: 400px;*!*/
-/*  !*height: auto;*!*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
-/*.container {*/
-/*  position: relative;*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*  align-items: center;*/
-/*}*/
 
 app-converter {
   position: relative;
