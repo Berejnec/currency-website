@@ -1,12 +1,4 @@
-app-footer {
-  position: fixed;
-  bottom: 0;
-  right: 10px;
-}
-
 app-converter {
   position: relative;
   top: 180px;
 }
-
-
