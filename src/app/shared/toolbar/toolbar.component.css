@@ -4,8 +4,8 @@ mat-toolbar-row {
 }
 
 .nav-button {
-  /*background-color: #6d7fe3;*/
   border: 1px solid mediumpurple;
+  margin-right: 5px;
 }
 #title {
   font-size: 50px;
@@ -14,7 +14,5 @@ mat-toolbar-row {
 }
 
 .buttons {
-  width: 450px;
-  display: flex;
-  justify-content: space-between;
+  width: 200vh;
 }
