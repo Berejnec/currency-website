@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiKey: "584a66da4a816642f6d52f4e", // exchange rate api key
-  binanceApiKey: "cWVIELC4IjF4VoUCilc9FNZ8XTPy9WzAEuvJvgzaRCFpzBXcaVnLhrHYJOCnofgS" // binance crypto api key
+  apiKey: "Enter your private personal API Key for Exchange Rate API",
+  binanceApiKey: "Insert your personal Binance API Key"
 };
 
 /*
