@@ -1,13 +1,16 @@
 mat-toolbar-row {
   min-height: 30px !important;
-  height: 40px !important;
+  height: 43px !important;
 }
 
 .nav-button {
   /*background-color: #6d7fe3;*/
+  border: 1px solid mediumpurple;
 }
 #title {
-  font-size: xx-large;
+  font-size: 50px;
+  font-family: Garamond, serif;
+  color: whitesmoke;
 }
 
 .buttons {
