@@ -23,12 +23,11 @@ export class ConverterComponent implements OnInit {
     this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data);
   }
 
-  onSubmit(form: NgForm) {
+  onSubmit() {
     let auxInput = this.inputValue;
     this.enteredValue = this.inputValue;
     this.currency.getUsdCurrency().subscribe(data => this.usdValue = data * auxInput);
     this.currency.getEuroCurrency().subscribe(data => this.eurValue = data * auxInput);
     this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data * auxInput);
-    form.resetForm();
   }
 }
