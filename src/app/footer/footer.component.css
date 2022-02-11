@@ -1,8 +1,29 @@
-h3 {
+mat-toolbar {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  min-height: 10px !important;
+  height: 20px !important;
+  opacity: 69%;
+  background-color: transparent;
+}
+
+.socials {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-name {
+  position: fixed;
+  bottom: 0;
+  right: 10px;
   font: 400 19px/32px Roboto, "Helvetica Neue", sans-serif;
 }
 
-.footer {
-  color: #e8e8e4;
-  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+a {
+  color: inherit;
 }
