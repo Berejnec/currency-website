@@ -17,6 +17,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ImagesComponent } from './images/images.component';
 import { CryptoConverterComponent } from './crypto-converter/crypto-converter.component';
+import { MDBBootstrapModule } from "angular-bootstrap-md";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { CryptoConverterComponent } from './crypto-converter/crypto-converter.co
         MatButtonModule,
         HttpClientModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        MDBBootstrapModule.forRoot()
     ],
   providers: [],
   bootstrap: [AppComponent]
