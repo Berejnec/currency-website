@@ -18,17 +18,17 @@ export class ConverterComponent implements OnInit {
   constructor(private currency: CurrencyService) { }
 
   ngOnInit(): void {
-    // this.currency.getUsdCurrency().subscribe(data => this.usdValue = data);
-    // this.currency.getEuroCurrency().subscribe(data => this.eurValue = data);
-    // this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data);
+    this.currency.getUsdCurrency().subscribe(data => this.usdValue = data);
+    this.currency.getEuroCurrency().subscribe(data => this.eurValue = data);
+    this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data);
   }
 
   onSubmit(form: NgForm) {
-    // let auxInput = this.inputValue;
-    // this.enteredValue = this.inputValue;
-    // this.currency.getUsdCurrency().subscribe(data => this.usdValue = data * auxInput);
-    // this.currency.getEuroCurrency().subscribe(data => this.eurValue = data * auxInput);
-    // this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data * auxInput);
-    // form.resetForm();
+    let auxInput = this.inputValue;
+    this.enteredValue = this.inputValue;
+    this.currency.getUsdCurrency().subscribe(data => this.usdValue = data * auxInput);
+    this.currency.getEuroCurrency().subscribe(data => this.eurValue = data * auxInput);
+    this.currency.getGbpCurrency().subscribe(data => this.gbpValue = data * auxInput);
+    form.resetForm();
   }
 }

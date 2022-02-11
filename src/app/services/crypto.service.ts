@@ -7,7 +7,7 @@ import {map} from "rxjs/operators";
   providedIn: 'root'
 })
 export class CryptoService {
-  private binanceApiKey = environment.binanceApiKey;
+
   private baseUrl = "https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT";
 
   constructor(private http: HttpClient) { }
