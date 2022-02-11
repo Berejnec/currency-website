@@ -8,7 +8,6 @@ import { ConverterComponent } from './converter/converter.component';
 import { FooterComponent } from './footer/footer.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
 import {MatCardModule} from "@angular/material/card";
@@ -18,6 +17,12 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { ImagesComponent } from './images/images.component';
 import { CryptoConverterComponent } from './crypto-converter/crypto-converter.component';
 import { MDBBootstrapModule } from "angular-bootstrap-md";
+import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { library, dom } from '@fortawesome/fontawesome-svg-core';
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
+import {IconDefinition} from "@fortawesome/free-regular-svg-icons";
+import {faSafari} from "@fortawesome/free-brands-svg-icons/faSafari";
+
 
 @NgModule({
   declarations: [
@@ -33,7 +38,6 @@ import { MDBBootstrapModule } from "angular-bootstrap-md";
         AppRoutingModule,
         NoopAnimationsModule,
         MatToolbarModule,
-        FontAwesomeModule,
         MatFormFieldModule,
         MatInputModule,
         MatCardModule,
@@ -41,9 +45,14 @@ import { MDBBootstrapModule } from "angular-bootstrap-md";
         HttpClientModule,
         FormsModule,
         ReactiveFormsModule,
-        MDBBootstrapModule.forRoot()
+        MDBBootstrapModule.forRoot(),
+        FontAwesomeModule
     ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+  }
+}
+
