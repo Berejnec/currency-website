@@ -7,7 +7,7 @@ import {CryptoConverterComponent} from "./crypto-converter/crypto-converter.comp
 const routes: Routes = [
   { path: '', redirectTo: 'converter', pathMatch: 'full'},
   { path: 'converter', component: ConverterComponent},
-  { path: 'crypto-images', component: ImagesComponent},
+  { path: 'crypto-websites', component: ImagesComponent},
   { path: 'crypto-converter', component: CryptoConverterComponent }
 ];
 
