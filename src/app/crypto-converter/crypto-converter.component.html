@@ -1,4 +1,4 @@
-<form class="form" #myForm="ngForm" (ngSubmit)="onSubmit(myForm)">
+<form class="form" #myForm="ngForm" (ngSubmit)="onSubmit()">
   <div class="container">
     <div class="input-btc">
       <label for="btcInput">Enter the amount of <strong>BTC</strong> you want to convert to USD</label>
@@ -6,8 +6,9 @@
         <mat-label>Bitcoin (BTC) :</mat-label>
         <input id="btcInput" matInput placeholder="Enter amount" [(ngModel)]="inputValue" name="btcInput" required>
       </mat-form-field>
-      <button mat-raised-button color="primary" type="submit">Convert</button>
+      <button mat-raised-button color="primary" type="submit" (click)="createNotification(inputValue, myForm)">Convert</button>
     </div>
+    <simple-notifications></simple-notifications>
     <div class="container-currencies">
         <mat-card> {{ btcUsdValue | currency: 'USD'}}</mat-card>
     </div>
