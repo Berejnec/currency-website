@@ -6,9 +6,10 @@
         <mat-label>RON:</mat-label>
         <input id="ronInput" matInput placeholder="Enter amount" [(ngModel)]="inputValue" name="ronInput" required>
       </mat-form-field>
-      <button mat-raised-button color="primary">Convert</button>
+      <button mat-raised-button color="primary" (click)="createNotification(inputValue, myForm)">Convert</button>
     </div>
-    <h2 *ngIf="myForm.submitted">The current equivalent currencies for {{ enteredValue }} RON are:</h2>
+    <h2 *ngIf="myForm.submitted && myForm.valid">The current equivalent currencies for {{ enteredValue }} RON are:</h2>
+    <simple-notifications></simple-notifications>
     <div class="container-currencies">
       <mat-card>{{ usdValue | currency:'USD' }}</mat-card>
       <mat-card>{{ eurValue  | currency:'EUR' }}</mat-card>
