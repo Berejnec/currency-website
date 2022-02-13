@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ToolbarComponent } from './shared/toolbar/toolbar.component';
 import { ConverterComponent } from './converter/converter.component';
 import { FooterComponent } from './footer/footer.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule, NoopAnimationsModule} from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatInputModule} from "@angular/material/input";
@@ -18,10 +18,7 @@ import { ImagesComponent } from './images/images.component';
 import { CryptoConverterComponent } from './crypto-converter/crypto-converter.component';
 import { MDBBootstrapModule } from "angular-bootstrap-md";
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
-import { library, dom } from '@fortawesome/fontawesome-svg-core';
-import {faGithub} from "@fortawesome/free-brands-svg-icons";
-import {IconDefinition} from "@fortawesome/free-regular-svg-icons";
-import {faSafari} from "@fortawesome/free-brands-svg-icons/faSafari";
+import { SimpleNotificationsModule } from 'angular2-notifications';
 
 
 @NgModule({
@@ -31,7 +28,7 @@ import {faSafari} from "@fortawesome/free-brands-svg-icons/faSafari";
     ConverterComponent,
     FooterComponent,
     ImagesComponent,
-    CryptoConverterComponent
+    CryptoConverterComponent,
   ],
     imports: [
         BrowserModule,
@@ -46,7 +43,9 @@ import {faSafari} from "@fortawesome/free-brands-svg-icons/faSafari";
         FormsModule,
         ReactiveFormsModule,
         MDBBootstrapModule.forRoot(),
-        FontAwesomeModule
+        FontAwesomeModule,
+        BrowserAnimationsModule,
+        SimpleNotificationsModule.forRoot()
     ],
   providers: [],
   bootstrap: [AppComponent]
